@@ -23,3 +23,8 @@ This a place where I copy flows from other places and mach them up for my own us
 In the browser type the url [http://localhost:1880/audio](http://localhost:1880/audio) keep this page open.
 Then press the inject button on the flow. The web page (http://localhost:1880/audio) should speak out the text contained in the inject module. Open the inject module and change the text.
 
+
+##`mashup-watson-translator+text-speech.json`
+This combines watson-translator.json and watson-text-speech.json
+This time the POST request is made to http://localhost:1880/translate_speech
+And the audio is heard at this url http://localhost:1880/translate_speech_audio
