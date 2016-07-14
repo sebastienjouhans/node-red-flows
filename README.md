@@ -28,3 +28,8 @@ Then press the inject button on the flow. The web page (http://localhost:1880/au
 This combines watson-translator.json and watson-text-speech.json
 * the POST request is made to http://localhost:1880/translate_speech
 * the audio is heard at this url http://localhost:1880/translate_speech_audio
+ 
+##`get-request-triggers-ifttt.json`
+* make sure the event and the apikey in the ifttt url is replaced with the relevant information from your receipy
+This shows how to get a ifttt reciepy containing the Maker module to send an email when the the request is sent.
+The url to go to in the browser is `http://localhost:1880/test-ifttt`
