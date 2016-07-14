@@ -6,7 +6,7 @@ This a place where I copy flows from other places and mach them up for my own us
 * requires a Watson Language translation service from Bluemix
   * use username and password given by the service
 * use postman to generate the POST request to this url http://localhost:1880/translate
-  * add the header Content-Type = application/json
+  * add the header `Content-Type = application/json`
   * add the follwing raw body
 ```json
 {
