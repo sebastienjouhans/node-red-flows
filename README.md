@@ -2,6 +2,8 @@
 
 This a place where I copy flows from other places and mach them up for my own use
 
+I used postman to make all the web requests
+
 ##`watson-translator.json`
 * requires a Watson Language translation service from Bluemix
   * use username and password given by the service
@@ -40,34 +42,34 @@ The url to go to in the browser is `http://localhost:1880/test-ifttt`
   * body of the request (example only)
    ```json
    {
-     "first: "arnold",
-     "last: "schwarzenegger",
-     "dob: "03/06/1925",
-     "gender: "m",
-     "hair_colour: "brown",
-     "occupation: "actor",
-     "nationality: "american"
+   "first:"arnold",
+   "last:"schwarzenegger",
+   "dob:"03/06/1925",
+   "gender:"m",
+   "hair_colour:"brown",
+   "occupation:"actor",
+   "nationality:"american"
    }
    ```
-or 
+or for multiple insert
    ```json
    [{
-     "first: "arnold",
-     "last: "schwarzenegger",
-     "dob: "03/06/1925",
-     "gender: "m",
-     "hair_colour: "brown",
-     "occupation: "actor",
-     "nationality: "american"
+   "first:"arnold",
+   "last:"schwarzenegger",
+   "dob:"03/06/1925",
+   "gender:"m",
+   "hair_colour:"brown",
+   "occupation:"actor",
+   "nationality:"american"
    },
    {
-     "first": "tony",
-     "last": "curtis",
-     "dob": "21/04/1978",
-     "gender": "m",
-     "hair_colour": "brown",
-     "occupation": "developer",
-     "nationality": "american"
+     "first":"tony",
+     "last":"curtis",
+     "dob":"21/04/1978",
+     "gender":"m",
+     "hair_colour":"brown",
+     "occupation":"developer",
+     "nationality":"american"
 }]
    ```
    
@@ -76,12 +78,14 @@ or
   * body of the request (example only)
    ```json
    {
-    "gender: "m"
+    "gender":"f"
    }
    ```
 
 ## `ifttt-maker-email-channels.json`
 For this flow you need a [ifttt](https://ifttt.com/) account so that you can produce a receipy with the Maker and email channels. The idea is that when the POST request to http://localhost:1880/ifttt with the body {"value1":"some value", "value2":"some value", "value3":"some value"} is received an email is sent to the email address set in the email channel. The values contained in the body will also be part of the email.
+* In the module web request replace the event name and the apikey with your own 
+https://maker.ifttt.com/trigger/{event}/with/key/apikey
 * POST request http://localhost:1880/ifttt
   * body of the request (example only)
    ```json
