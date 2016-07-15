@@ -76,6 +76,18 @@ or
   * body of the request (example only)
    ```json
    {
-     "gender: "m"
+    "gender: "m"
+   }
+   ```
+
+## `ifttt-maker-email-channels.json`
+For this flow you need a [ifttt](https://ifttt.com/) account so that you can produce a receipy with the Maker and email channels. The idea is that when the POST request to http://localhost:1880/ifttt with the body {"value1":"some value", "value2":"some value", "value3":"some value"} is received an email is sent to the email address set in the email channel. The values contained in the body will also be part of the email.
+* POST request http://localhost:1880/ifttt
+  * body of the request (example only)
+   ```json
+   {
+    "value1":"some value", 
+    "value2":"some value", 
+    "value3":"some value"
    }
    ```
