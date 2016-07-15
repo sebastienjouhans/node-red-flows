@@ -74,8 +74,8 @@ or
 * find data in a mongodb collection
   * POST request http://localhost:1880/mongodb-find
   * body of the request (example only)
-    ```json
-   {
-    "gender: "m"
-   }
-   ```
+  ```json
+  {
+   "gender: "m"
+  }
+  ```
