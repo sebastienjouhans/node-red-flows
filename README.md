@@ -33,3 +33,49 @@ This combines watson-translator.json and watson-text-speech.json
 * make sure the event and the apikey in the ifttt url is replaced with the relevant information from your receipy
 This shows how to get a ifttt reciepy containing the Maker module to send an email when the the request is sent.
 The url to go to in the browser is `http://localhost:1880/test-ifttt`
+
+## `insert-find-in-mogodb.json`
+* insert data in a mongodb collection
+  * POST request http://localhost:1880/mongodb-insert
+  * body of the request (example only)
+   ```json
+   {
+    "first: "arnold",
+    "last: "schwarzenegger",
+    "dob: "03/06/1925",
+    "gender: "m",
+    "hair_colour: "brown",
+    "occupation: "actor",
+    "nationality: "american"
+   }
+   ```
+or 
+   ```json
+   [{
+    "first: "arnold",
+    "last: "schwarzenegger",
+    "dob: "03/06/1925",
+    "gender: "m",
+    "hair_colour: "brown",
+    "occupation: "actor",
+    "nationality: "american"
+   },
+   {
+    "first": "tony",
+    "last": "curtis",
+    "dob": "21/04/1978",
+    "gender": "m",
+    "hair_colour": "brown",
+    "occupation": "developer",
+    "nationality": "american"
+}]
+   ```
+   
+* find data in a mongodb collection
+  * POST request http://localhost:1880/mongodb-find
+  * body of the request (example only)
+    ```json
+   {
+    "gender: "m"
+   }
+   ```
