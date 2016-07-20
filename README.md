@@ -1,6 +1,6 @@
 # node-red-flows
 
-This a place where I copy flows from other places and mach them up for my own use
+This a place for playground with node red
 
 I used postman to make all the web requests
 
