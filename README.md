@@ -95,3 +95,11 @@ https://maker.ifttt.com/trigger/{event}/with/key/apikey
     "value3":"some value"
    }
    ```
+
+## `image-classifier.json`
+This flows can be used with any trained models.
+This is the url to use
+`http://localhost:1880/recognise_nike?url={url to the image}&classifier_id={nike classifier}&version={version}&apikey={api key}`
+or go to this url 
+`http://localhost:1880/recognise_nike` 
+and enter the necessary information in the form
