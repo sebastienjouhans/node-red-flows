@@ -1,6 +1,6 @@
 # node-red-flows
 
-This a place for playground with node red
+This a place for playground with [node red](http://nodered.org/)
 
 I used postman to make all the web requests
 
