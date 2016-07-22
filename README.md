@@ -42,35 +42,35 @@ The url to go to in the browser is `http://localhost:1880/test-ifttt`
   * body of the request (example only)
    ```json
    {
-   "first:"arnold",
-   "last:"schwarzenegger",
-   "dob:"03/06/1925",
-   "gender:"m",
-   "hair_colour:"brown",
-   "occupation:"actor",
-   "nationality:"american"
+   	"first":"arnold",
+   	"last":"schwarzenegger",
+   	"dob":"03/06/1925",
+   	"gender":"m",
+   	"hair_colour":"brown",
+   	"occupation":"actor",
+   	"nationality":"american"
    }
    ```
 or for multiple insert
    ```json
    [{
-   "first:"arnold",
-   "last:"schwarzenegger",
-   "dob:"03/06/1925",
-   "gender:"m",
-   "hair_colour:"brown",
-   "occupation:"actor",
-   "nationality:"american"
+   	"first":"arnold",
+   	"last":"schwarzenegger",
+   	"dob":"03/06/1925",
+   	"gender":"m",
+   	"hair_colour":"brown",
+   	"occupation":"actor",
+   	"nationality":"american"
    },
    {
-     "first":"tony",
-     "last":"curtis",
-     "dob":"21/04/1978",
-     "gender":"m",
-     "hair_colour":"brown",
-     "occupation":"developer",
-     "nationality":"american"
-}]
+   	"first":"tony",
+   	"last":"curtis",
+   	"dob":"21/04/1978",
+   	"gender":"m",
+   	"hair_colour":"brown",
+   	"occupation":"developer",
+   	"nationality":"american"
+   }]
    ```
    
 * find data in a mongodb collection
