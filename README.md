@@ -97,7 +97,7 @@ https://maker.ifttt.com/trigger/{event}/with/key/apikey
    ```
 
 ## `image-classifier.json`
-This flows can be used with any trained models.
+This flow is used in conjunction of the image classifier on BlueMix. The classifier needs to be trained before it can be used with this flow.
 This is the url to use
 `http://localhost:1880/recognise_nike?url={url to the image}&classifier_id={nike classifier}&version={version}&apikey={api key}`
 or go to this url 
