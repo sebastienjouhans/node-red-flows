@@ -1,6 +1,6 @@
 # node-red-flows
 
-This a place for playground with [node red](http://nodered.org/)
+This a place for playground with [node red](http://nodered.org/). Some of the flows require some BlueMix services.
 
 I used postman to make all the web requests
 
