@@ -103,3 +103,28 @@ This is the url to use
 or go to this url 
 `http://localhost:1880/recognise_nike` 
 and enter the necessary information in the form
+
+## `arduino-test.json`
+This flow requires an Arduino board with an led on pin 12 and 13. And a button pin 2.
+
+* Pressing the button will light up the led 12.
+* Clicking the button whick on the flow will light up the led 13.
+
+## `blynk-websocket.json`
+This is an example that shows how Blynk (http://www.blynk.cc/) can be used with web socket in order to update a webpage (http://127.0.0.1:1880/blynk).
+
+## `gps-simulator--mqtt-ibm-iot--websocket.json`
+This flow shows how a gps simulator sending data to the ibm iot cloud. Then another flow recives that data extracts long and lat sends it via web socket to a webpage (http://127.0.0.1:1880/iotfeedback) so it can be displayed.
+
+## `ibm-iot-mqtt.json`
+ibm iot module connected to a debug module.
+
+## `simple-web-socket.json`
+This flow shows how web socket can be used with a web page (http://127.0.0.1:1880/simple).
+Clicking a button on the webpage will update all the webpages connected to the socket with the current time. Clicking the button on the flow will also do the same.
+
+## `tube-status.json`
+Clicking the button on the flow will get the tube status and display them on the webpage (http://127.0.0.1:1880/tubestatus)
+
+## `web-socket-and-html-widget.json`
+Synchs two webpages, when one thing is updated on a webpage http://127.0.0.1:1880/testing) the other automatically update.
