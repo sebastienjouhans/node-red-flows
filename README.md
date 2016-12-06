@@ -1,6 +1,6 @@
 # node-red-flows
 
-This a place where I copy flows from other places and mach them up for my own use
+This a place for playground with [node red](http://nodered.org/). Some of the flows require some BlueMix services.
 
 I used postman to make all the web requests
 
@@ -42,35 +42,35 @@ The url to go to in the browser is `http://localhost:1880/test-ifttt`
   * body of the request (example only)
    ```json
    {
-   "first:"arnold",
-   "last:"schwarzenegger",
-   "dob:"03/06/1925",
-   "gender:"m",
-   "hair_colour:"brown",
-   "occupation:"actor",
-   "nationality:"american"
+   	"first":"arnold",
+   	"last":"schwarzenegger",
+   	"dob":"03/06/1925",
+   	"gender":"m",
+   	"hair_colour":"brown",
+   	"occupation":"actor",
+   	"nationality":"american"
    }
    ```
 or for multiple insert
    ```json
    [{
-   "first:"arnold",
-   "last:"schwarzenegger",
-   "dob:"03/06/1925",
-   "gender:"m",
-   "hair_colour:"brown",
-   "occupation:"actor",
-   "nationality:"american"
+   	"first":"arnold",
+   	"last":"schwarzenegger",
+   	"dob":"03/06/1925",
+   	"gender":"m",
+   	"hair_colour":"brown",
+   	"occupation":"actor",
+   	"nationality":"american"
    },
    {
-     "first":"tony",
-     "last":"curtis",
-     "dob":"21/04/1978",
-     "gender":"m",
-     "hair_colour":"brown",
-     "occupation":"developer",
-     "nationality":"american"
-}]
+   	"first":"tony",
+   	"last":"curtis",
+   	"dob":"21/04/1978",
+   	"gender":"m",
+   	"hair_colour":"brown",
+   	"occupation":"developer",
+   	"nationality":"american"
+   }]
    ```
    
 * find data in a mongodb collection
@@ -97,7 +97,7 @@ https://maker.ifttt.com/trigger/{event}/with/key/apikey
    ```
 
 ## `image-classifier.json`
-This flows can be used with any trained models.
+This flow is used in conjunction of the image classifier on BlueMix. The classifier needs to be trained before it can be used with this flow.
 This is the url to use
 `http://localhost:1880/recognise_nike?url={url to the image}&classifier_id={nike classifier}&version={version}&apikey={api key}`
 or go to this url 
